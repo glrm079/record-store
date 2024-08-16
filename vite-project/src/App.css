@@ -22,3 +22,7 @@
     background-size: 200% 200%;
     animation: gradientAnimation 10s ease infinite;
 }
+
+hr{
+    width: 96%;
+}
