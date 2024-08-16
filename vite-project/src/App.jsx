@@ -27,6 +27,7 @@ function App() {
       <div className="animated-background flex flex-row items-center justify-between px-6 fixed h-20 top-0 ">
           <img className="w-36" src={logo} alt="" />
           <div className='flex flex-row justify-center items-center'>
+            <img src={xsvg} onClick={()=>{setModal(modal => false)}} className="w-6" alt="" />
             <input onChange={(ev)=>{setPesquisa(ev.target.value)}} className='h-5 rounded mr-3' type="text" />
             <img onClick={()=>{setModal(modal => true)}} className="w-8" src={shopCart} alt="" />
             {
@@ -39,8 +40,10 @@ function App() {
           {
               modal ? <>
                   <div className=" transition-transform flex justify-between flex-col w-96 h-fit animated-background absolute top-2 right-0 m-4 rounded shadow-md text-zinc-50 ">
-                      <header className="p-5">
+                      <header className="p-5 flex flex-row justify-between">
                           <img src={xsvg} onClick={()=>{setModal(modal => false)}} className="w-6" alt="" />
+                          <img src={xsvg} onClick={()=>{setModal(modal => false)}} className="w-6" alt="" />
+
                       </header>
                       
                       <main className='flex flex-col gap-4 p-4 overflow-auto min-h-40 max-h-96
