@@ -38,10 +38,10 @@ function App() {
                 className="h-5 mr-3 bg-transparent text-zinc-50 border-b w-60 focus:outline-none focus:border-b focus:border-zinc-50 active:border-b-2 active:border-zinc-50"
                 type="text"
               />
-              <img onClick={()=>{setModal(modal => true)}} className="w-7" src={shopCart} alt="" />
+              <img onClick={()=>{setModal(modal => true)}} className="w-8" src={shopCart} alt="" />
               {
                 number !== 0?<>
-                  <p className='text-zinc-50'>{number}</p>
+                  <p className='text-zinc-50  text-sm border border-zinc-50 rounded-full p-1 px-3'>{number}</p>
                 </>:null
               }
             </div>
@@ -128,7 +128,7 @@ function App() {
                       <p>{album.artist}</p>
                       <p><strong>$</strong> {album.price}</p>
                       </div>
-                      <button onClick={()=>{compra(album)}} className='hover:animated-background px-3 py-1 rounded text-white  animate-gradient'>Comprar</button>
+                      <button onClick={()=>{compra(album)}} className='bg-transparent border border-zinc-50 px-3 py-1 rounded text-white'>Comprar</button>
                     </div>
                 </>:null 
               ))
