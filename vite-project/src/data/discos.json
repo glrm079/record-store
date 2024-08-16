@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "coverImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS-urcHIs3L7CGOxtxrzjquHiYoY3TLh24IgDZVLQVttq8sSEkr0ZXTLUFYCBnxbINS4A&usqp=CAU",
+        "title": "OK Computer",
+        "artist": "Radiohead",
+        "releaseYear": 1997,
+        "description": "An alternative rock album that explores themes of modern alienation.",
+        "price": 15,
+        "stock": 0
+    },
+    {
+        "id": 2,
+        "coverImage": "https://m.media-amazon.com/images/I/71n8bP01wxL._AC_SL1077_.jpg",
+        "title": "The Queen is dead",
+        "artist": "The Smiths",
+        "releaseYear": 1986,
+        "description": "A seminal indie rock album with introspective lyrics and jangly guitars.",
+        "price": 20,
+        "stock": 0
+    },
+    {
+        "id": 3,
+        "coverImage": "https://m.media-amazon.com/images/I/61vpJismy8S._AC_SL1200_.jpg",
+        "title": "Heaven or Las Vegas",
+        "artist": "Cocteau Twins",
+        "releaseYear": 1990,
+        "description": "A dream pop masterpiece known for its ethereal soundscapes and Elizabeth Fraser's unique vocals.",
+        "price": 18,
+        "stock": 0
+    },
+    {
+        "id": 4,
+        "coverImage": "https://m.media-amazon.com/images/I/81cQT4VSVdL._AC_SL1500_.jpg",
+        "title": "Arthur Verocai",
+        "artist": "Arthur Verocai",
+        "releaseYear": 1972,
+        "description": "A Brazilian classic album blending elements of jazz, MPB, and orchestral music.",
+        "price": 22,
+        "stock": 0
+    },
+    {
+        "id": 5,
+        "coverImage": "https://m.media-amazon.com/images/I/618nkXxBxsL._AC_SL1425_.jpg",
+        "title": "Unknown Pleasures",
+        "artist": "Joy Division",
+        "releaseYear": 1979,
+        "description": "A post-punk album that captures a sense of despair and isolation.",
+        "price": 17,
+        "stock": 0
+    },
+    {
+        "id": 6,
+        "coverImage": "https://m.media-amazon.com/images/I/81wDjg-BWqL._AC_SL1500_.jpg",
+        "title": "Grace",
+        "artist": "Jeff Buckley",
+        "releaseYear": 1994,
+        "description": "A soulful and eclectic debut album that showcases Buckley's vocal range and emotional depth.",
+        "price": 25,
+        "stock": 0
+    },
+    {
+        "id": 7,
+        "coverImage": "https://m.media-amazon.com/images/I/71sP00tA41L._AC_SL1425_.jpg",
+        "title": "White Pony",
+        "artist": "Deftones",
+        "releaseYear": 2000,
+        "description": "An alternative metal album known for its atmospheric sound and poetic lyrics.",
+        "price": 23,
+        "stock": 0
+    },
+    {
+        "id": 8,
+        "coverImage": "https://m.media-amazon.com/images/I/81pqjl6VYBL._AC_SL1500_.jpg",
+        "title": "Souvlaki",
+        "artist": "Slowdive",
+        "releaseYear": 1993,
+        "description": "A shoegaze album that blends lush soundscapes with haunting melodies.",
+        "price": 19,
+        "stock": 0
+    },
+    {
+        "id": 9,
+        "coverImage": "https://m.media-amazon.com/images/I/714m2K5wT8L._AC_SL1200_.jpg",
+        "title": "Kid A",
+        "artist": "Radiohead",
+        "releaseYear": 2000,
+        "description": "An experimental album that marks a departure from traditional rock.",
+        "price": 21,
+        "stock": 0
+    },
+    {
+        "id": 10,
+        "coverImage": "https://m.media-amazon.com/images/I/A1MwaIeBpwL._AC_SL1500_.jpg",
+        "title": "In Rainbows",
+        "artist": "Radiohead",
+        "releaseYear": 2007,
+        "description": "An album that blends electronic elements with emotional depth.",
+        "price": 24,
+        "stock": 0
+    },
+    {
+        "id": 11,
+        "coverImage": "https://m.media-amazon.com/images/I/71LQe7Yd-rS._AC_SL1200_.jpg",
+        "title": "Treasure",
+        "artist": "Cocteau Twins",
+        "releaseYear": 1984,
+        "description": "A dream pop album known for its atmospheric textures and ethereal vocals.",
+        "price": 20,
+        "stock": 0
+    },
+    {
+        "id": 12,
+        "coverImage": "https://m.media-amazon.com/images/I/71pnSxIeTVL._AC_SL1425_.jpg",
+        "title": "The Smiths",
+        "artist": "The Smiths",
+        "releaseYear": 1984,
+        "description": "The debut album of The Smiths, featuring themes of alienation and social criticism.",
+        "price": 16,
+        "stock": 0
+    },
+    {
+        "id": 13,
+        "coverImage": "https://m.media-amazon.com/images/I/6148HrAemsL._AC_SL1200_.jpg",
+        "title": "The Bends",
+        "artist": "Radiohead",
+        "releaseYear": 1995,
+        "description": "An alternative rock album that introduced Radiohead to mainstream success.",
+        "price": 22,
+        "stock": 0
+    },
+    {
+        "id": 14,
+        "coverImage": "https://m.media-amazon.com/images/I/81SfMiORihL._AC_SL1200_.jpg",
+        "title": "Hail to the Thief",
+        "artist": "Radiohead",
+        "releaseYear": 2003,
+        "description": "An album that blends political themes with experimental rock.",
+        "price": 19,
+        "stock": 0
+    },
+    {
+        "id": 15,
+        "coverImage": "https://m.media-amazon.com/images/I/81lqoQFA67L._AC_SL1425_.jpg",
+        "title": "Around the Fur",
+        "artist": "Deftones",
+        "releaseYear": 1997,
+        "description": "A heavy album known for its aggressive sound and emotional intensity.",
+        "price": 21,
+        "stock": 0
+    }
+]
