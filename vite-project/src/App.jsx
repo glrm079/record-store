@@ -25,6 +25,20 @@ function App() {
     setValorTotal(valorTotal => valorTotal -= album.price)
     album.stock -= 1
   }
+  function trashFunc(){
+    discos.forEach((disco)=>{
+      disco.stock = 0
+    })
+    setNumber(0)
+    setValorTotal(0)
+  }
+  function trashFuncSelf(album){
+    const stock = album.stock
+    const remove = stock * album.price
+    setNumber(number => number -= stock)
+    setValorTotal(valorTotal => valorTotal -= remove)
+    album.stock = 0
+  }
   
   return (
     <>
@@ -51,8 +65,7 @@ function App() {
                     <div className="flex justify-between flex-col min-w-96 w-96 h-fit animated-background absolute top-2 right-0 m-4 rounded shadow-md text-zinc-50 ">
                         <header className="p-5 flex flex-row justify-between">
                             <img src={xsvg} onClick={()=>{setModal(modal => false)}} className="w-8" alt="" />
-                            <img src={trash} className="w-8" alt="" />
-                          
+                            <img src={trash} onClick={trashFunc} className="w-8" alt="" />
                         </header>
                         
                         <main className='flex flex-col gap-4 p-4 overflow-auto min-h-40 max-h-96
@@ -70,7 +83,10 @@ function App() {
                                           </div>
                                           <div className=' min-w-60  max-w-60 flex p-2 flex-col justify-between'>
                                             <div>
-                                              <h2 className='font-bold'>{disco.title}</h2>
+                                              <div className='flex flex-row justify-between'>
+                                                <h2 className='font-bold'>{disco.title}</h2>
+                                                <img className='w-6' onClick={()=>{trashFuncSelf(disco)}} src={trash} alt="" />
+                                              </div>
                                               <p>{disco.artist}</p>
                                             </div>
                                             <div className='flex flex-row justify-between gap-24'>
