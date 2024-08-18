@@ -1,16 +1,30 @@
 import './App.css'
 import { useState } from "react"
+import Header from './components/Header/index.jsx'
 import discos from './data/discos.json'
+import Home from './components/Home/index.jsx'
+import DiscoPage from './components/DiscoPage/index.jsx'
+
 
 function App() {
   const [number,setNumber] = useState(0)
   const [valorTotal,setValorTotal] = useState(0)
   const [pesquisa,setPesquisa] = useState("")
+  const[pageInfo,setPageInfo] = useState("")
+  const [buyModal,setBuyModal] = useState(false)
 
-  function compra(album){
-    setNumber(number => number += 1)
-    setValorTotal(valorTotal => valorTotal += album.price)
-    album.stock += 1
+  function compra(discoF){
+    discos.forEach((disco)=>{
+      if(discoF.id === disco.id){
+        setNumber(number => number += 1)
+        setValorTotal(valorTotal => valorTotal += disco.price)
+        disco.stock += 1
+        setBuyModal(true)
+        setTimeout(()=>{
+          setBuyModal(false)
+        },1500)
+      }
+    })
   }
 
 
@@ -27,42 +41,31 @@ function App() {
         discos={discos}
         compra={compra}
       />
-      
-      <div className='flex flex-wrap justify-center gap-3 m-5 text-zinc-50 mt-24'>
-          {pesquisa !== ""?<>
-            {
-               discos.map((album) => (
-                album.artist.toLowerCase().includes(pesquisa.toLowerCase()) || album.title.toLowerCase().includes(pesquisa.toLowerCase())   ?<>
-                    <div key={album.id} className='w-72 h-96 hover:border hover:border-zinc-50 p-2'>
-                      <img src={album.coverImage} alt={album.title} className='w-full object-cover'/>
-                      <h2 className='font-extrabold text-sm'>{album.title} </h2>
-                      <div className='flex flex-row justify-between'>
-                      <p>{album.artist}</p>
-                      <p><strong>$</strong> {album.price}</p>
-                      </div>
-                      <button onClick={()=>{compra(album)}} className='bg-transparent border border-zinc-50 px-3 py-1 rounded text-white'>Comprar</button>
-                    </div>
-                </>:null 
-              ))
-            }
-            
-          </>:<>
-            {
-              discos.map((album) => (
-                <div key={album.id} onClick={()=>{discModal(album)}} className='w-72 h-96  hover:border hover:border-zinc-50 p-2'>
-                  <img src={album.coverImage} alt={album.title} className='w-full object-cover'/>
-                  <h2 className='font-extrabold text-sm'>{album.title} </h2>
-                  <div className='flex flex-row justify-between'>
-                  <p>{album.artist}</p>
-                  <p><strong>$</strong> {album.price}</p>
-                  </div>
-                  <button onClick={()=>{compra(album)}} className='bg-transparent border border-zinc-50 px-3 py-1 rounded text-white'>Comprar</button>
-                </div>
-              ))
-            }
-          </>
-        }
-      </div>
+      {
+        buyModal === true?<>
+          <div className='fixed top-24 left-1/2 transform -translate-x-1/2 text-zinc-50 animated-background border border-zinc-50 w-80 h-12 rounded flex justify-center items-center'>
+            <p>Item Adicionado ao carrinho!</p>
+          </div>
+
+
+        </>:null
+      }
+      {
+        pageInfo !== ""?<>
+          <DiscoPage
+                pageInfo={pageInfo}
+                setPageInfo={setPageInfo}
+                compra={compra}
+            />
+        </>:<>
+        <Home
+          pesquisa={pesquisa}
+          discos={discos}
+          compra={compra}
+          setPageInfo={setPageInfo}
+        />
+        </>
+      }
     </>
   )
 }
