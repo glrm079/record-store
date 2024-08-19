@@ -4,7 +4,7 @@ import xsvg from '/src/assets/close.svg'
 import shopCart from '/src/assets/shopping-cart-svgrepo-com.svg'
 import trash from '/src/assets/trash.svg'
 import search from '/src/assets/search.svg'
-import HeaderCard from './headerCard'
+import HeaderCard from './HeaderCard.jsx'
 import { useState } from "react"
 
 
