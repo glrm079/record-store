@@ -40,7 +40,7 @@ export default function Header({ number, setNumber, valorTotal, setValorTotal, p
 
                     {
                         modal ? <>
-                            <div className="w-full h-screen top-24 right-auto left-auto justify-between flex-col sm:w-96 sm:h-fit animated-background absolute sm:top-2 sm:m-4 mx-auto rounded shadow-md text-zinc-50 ">
+                            <div className=" z-30 justify-between flex-col animated-background absolute  rounded  text-zinc-50  h-screen m-0 left-0 top-0    ">
                                 <header className="p-5 flex flex-row justify-between">
                                     <img src={xsvg} onClick={()=>{setModal(false)}} className="w-8" alt="" />
                                     <img src={trash} onClick={trashFunc} className="w-8" alt="" />
@@ -63,7 +63,7 @@ export default function Header({ number, setNumber, valorTotal, setValorTotal, p
                                     </>
                                     }
                                 </main>
-                                <footer className='p-3 px-6'>
+                                <footer className='p-0 px-6'>
                                 {
                                     number !== 0?<>
                                     <div className='flex justify-between items-center'>
