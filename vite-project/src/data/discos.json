@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "coverImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS-urcHIs3L7CGOxtxrzjquHiYoY3TLh24IgDZVLQVttq8sSEkr0ZXTLUFYCBnxbINS4A&usqp=CAU",
+        "coverImage": "https://m.media-amazon.com/images/I/71qtTEW46SL._AC_SL1200_.jpg",
         "title": "OK Computer",
         "artist": "Radiohead",
         "releaseYear": 1997,
@@ -148,5 +148,15 @@
         "description": "A heavy album known for its aggressive sound and emotional intensity.",
         "price": 21,
         "stock": 0
+    },
+    {
+        "id": 16,
+        "coverImage": "https://m.media-amazon.com/images/I/81MgBQJwANL._AC_SX679_.jpg",
+        "title": "Clube da Esquina",
+        "artist": "Milton Nascimento & Lô Borges",
+        "releaseYear": 1972,
+        "description": "Um álbum icônico que mescla influências da MPB, rock, e jazz, conhecido por suas composições líricas e harmonias complexas.",
+        "price": 25,
+        "stock": 10
     }
 ]

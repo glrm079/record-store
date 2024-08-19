@@ -27,7 +27,7 @@ export default function Header({ number, setNumber, valorTotal, setValorTotal, p
                     <img src={search}  className="w-8" alt="" />
                     <input
                         onChange={(ev) => setPesquisa(ev.target.value)}
-                        className="h-5 mr-3 bg-transparent text-zinc-50 border-b w-60 md:w-full focus:outline-none focus:border-b focus:border-zinc-50 active:border-b-2 active:border-zinc-50"
+                        className="h-5 mr-3 bg-transparent text-zinc-50 border-b w-20 sm:w-60 focus:outline-none focus:border-b focus:border-zinc-50 active:border-b-2 active:border-zinc-50"
                         type="text"
                     />
                     <img onClick={()=>{setModal(true)}} className="w-8" src={shopCart} alt="" />
@@ -40,7 +40,7 @@ export default function Header({ number, setNumber, valorTotal, setValorTotal, p
 
                     {
                         modal ? <>
-                            <div className="flex justify-between flex-col min-w-96 w-96 h-fit animated-background absolute top-2 right-0 m-4 rounded shadow-md text-zinc-50 ">
+                            <div className="w-full h-screen top-24 right-auto left-auto justify-between flex-col sm:w-96 sm:h-fit animated-background absolute sm:top-2 sm:m-4 mx-auto rounded shadow-md text-zinc-50 ">
                                 <header className="p-5 flex flex-row justify-between">
                                     <img src={xsvg} onClick={()=>{setModal(false)}} className="w-8" alt="" />
                                     <img src={trash} onClick={trashFunc} className="w-8" alt="" />
