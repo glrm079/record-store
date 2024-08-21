@@ -9,7 +9,7 @@ export default function DiscoPage({pageInfo,compra,setPageInfo}){
                 <img className='w-96 sm:w-full object-cover' src={pageInfo.coverImage} alt="" />
             </div>
 
-            <div className="w-full py-5 sm:w-2/4 sm:p-10 px-1  text-zinc-50 flex justify-center">
+            <div className="w-full p-10 sm:w-2/4 sm:p-10  text-zinc-50 flex justify-center">
                 <div className="flex flex-col h-full gap-7  sm:w-3/4">
                         <h1 className="text-3xl sm:text-6xl font-bold">{pageInfo.title}</h1>
                         <div className="flex flex-row justify-between">
