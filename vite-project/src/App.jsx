@@ -68,7 +68,7 @@ function App() {
       }
        <hr className='ml-auto mr-auto' />
       <footer className='animated-background p-10'>
-        <div className='flex justify-center items-center gap-2 text-zinc-50'><p>© 2024 - Record Store Todos direitos reservados. | Desenvolvido por:</p><a href="github.com/glrm_079">Guilherme Oliveira</a></div>
+        <div className='flex justify-center items-center gap-2 text-zinc-50'><p>© 2024 - Record Store Todos direitos reservados. | Desenvolvido por:</p><a  href="https://github.com/glrm079">Guilherme Oliveira</a></div>
       </footer>
     </>
   )
